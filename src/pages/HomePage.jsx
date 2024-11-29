@@ -138,10 +138,10 @@ const HomePage = () => {
   return (
     <main className="main-content">
       {/* Audio player section */}
-      <div className="audio-player bg-blue-500 p-4 shadow-md mb-6">
+      <div className="audio-player bg-purple-800 p-4 shadow-md mb-6">
         <h2 className="text-white text-lg font-semibold mb-2">Currently Playing</h2>
         <audio
-          className="w-full bg-blue-500"
+          className="w-full bg-purple-800"
           controls
           onPlay={handleAudioPlay}
           onPause={handleAudioPause}
@@ -151,12 +151,12 @@ const HomePage = () => {
         </audio>
 
         <div className="mt-4 text-white">
-        <h3 className="text-xl font-semibold">Something Was Wrong</h3>
-      <div className="mt-4">
-        <p><span className="font-semibold">Season:</span> 1</p>
-        <p><span className="font-semibold">Episode 1:</span> There Were No Red Flags</p>
+          <h3 className="text-xl font-semibold">Something Was Wrong</h3>
+          <div className="mt-4">
+            <p><span className="font-semibold">Season:</span> 1</p>
+            <p><span className="font-semibold">Episode 1:</span> There Were No Red Flags</p>
           </div>
-          
+
           <div className="flex items-center mt-4 space-x-4">
             {/* Seek Backward Icon */}
             <svg
@@ -165,7 +165,7 @@ const HomePage = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              onClick={() => {} /* Handle Seek Backward Action */}
+              onClick={() => { } /* Handle Seek Backward Action */}
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
             </svg>
@@ -176,7 +176,7 @@ const HomePage = () => {
               className="h-12 w-12 text-white cursor-pointer"
               viewBox="0 0 20 20"
               fill="currentColor"
-              onClick={() => {} /* Handle Pause Action */}
+              onClick={() => { } /* Handle Pause Action */}
             >
               <rect x="5" y="5" width="4" height="10" />
               <rect x="11" y="5" width="4" height="10" />
@@ -189,7 +189,7 @@ const HomePage = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              onClick={() => {} /* Handle Seek Forward Action */}
+              onClick={() => { } /* Handle Seek Forward Action */}
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
             </svg>
@@ -245,13 +245,13 @@ const HomePage = () => {
         {previews.length > 0 && (
           <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <img className="w-full lg:h-auto% md:h-auto sm:h-auto object-cover rounded"
-             src={previews[currentIndex].image}
-             style={{ maxHeight: '60%'}}
-             alt={previews[currentIndex].title} />
+              src={previews[currentIndex].image}
+              style={{ maxHeight: '60%' }}
+              alt={previews[currentIndex].title} />
             <div className="px-6 py-4">
               <h3 className="text-xl font-semibold mt-2">{previews[currentIndex].title}</h3>
-              <button 
-                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 my-4 mx-2 rounded" 
+              <button
+                className="bg-yellow-300 hover:bg-yellow-500 text-black font-bold py-2 px-4 my-4 mx-2 rounded"
                 onClick={() => handleMoreInfoClick(previews[currentIndex].id)}
               >
                 More Info
@@ -285,8 +285,8 @@ const HomePage = () => {
             <div className="px-6 py-4">
               <img className="w-full h-auto md:h-auto sm:h-auto object-cover rounded" src={preview.image} alt={preview.title} />
               <h3 className="text-xl font-semibold mt-2">{preview.title}</h3>
-              <button 
-                className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 my-4 mx-2 rounded" 
+              <button
+                className="bg-yellow-400 hover:bg-yellow-600 text-black font-bold py-2 px-4 my-4 mx-2 rounded"
                 onClick={() => handleMoreInfoClick(preview.id)}
               >
                 More Info

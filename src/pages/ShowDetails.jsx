@@ -153,7 +153,7 @@ const ShowDetail = ({ addToFavorites }) => {
                         Your browser does not support the audio element.
                       </audio>
                       <button
-                        className="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-2"
+                        className="bg-yellow-400 hover:bg-yellow-700 text-black font-bold py-2 px-4 rounded-full mt-2"
                         onClick={() => handleAddToFavorites(episode)}
                       >
                         Add to Favorites
@@ -171,7 +171,7 @@ const ShowDetail = ({ addToFavorites }) => {
                   ))}
               </div>
             )}
-         
+
           </div>
         </div>
       </div>

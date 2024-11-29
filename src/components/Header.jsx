@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <header className="bg-blue-500 py-4 relative">
+    <header className="bg-purple-800 py-4 relative">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <svg
@@ -34,7 +34,7 @@ function Header() {
               fontWeight="bold"
               dy=".3em"
             >
-              A
+              P
             </text>
           </svg>
           <h1 className="text-white text-2xl font-bold ml-2">PodCasTAR</h1>
@@ -69,27 +69,27 @@ function Header() {
           <NavLink
             to="/"
             exact
-            className="text-white font-bold px-4 py-2 rounded-md mx-2 hover:bg-red-700 transition duration-300"
-            activeClassName="bg-orange-600"
+            className="text-white hover:text-black font-bold px-4 py-2 rounded-md mx-2 hover:bg-yellow-200 transition duration-300"
+            activeClassName="bg-yellow-400"
           >
             Home
           </NavLink>
           <NavLink
             to="/favorites"
-            className="text-white font-bold px-4 py-2 rounded-md mx-2 hover:bg-red-700 transition duration-300"
-            activeClassName="bg-orange-600"
+            className="text-white hover:text-black font-bold px-4 py-2 rounded-md mx-2 hover:bg-yellow-200 transition duration-300"
+            activeClassName="bg-yellow-400"
           >
             Favorites
           </NavLink>
           <NavLink
             to="/contact"
-            className="text-white font-bold px-4 py-2 rounded-md mx-2 hover:bg-red-700 transition duration-300"
-            activeClassName="bg-orange-600"
+            className="text-white hover:text-black font-bold px-4 py-2 rounded-md mx-2 hover:bg-yellow-200 transition duration-300"
+            activeClassName="bg-yellow-400"
           >
             Contact
           </NavLink>
           <button
-            className="text-white font-bold mb-2 px-4 py-2 rounded-md mx-2 bg-transparent border border-white hover:bg-white hover:text-blue-500 focus:outline-none transition duration-300"
+            className="text-white font-bold mb-2 px-4 py-2 rounded-md mx-2 bg-transparent border border-white hover:bg-white hover:text-purple-800 focus:outline-none transition duration-300"
             onClick={handleResetHistory}
           >
             LogOut
