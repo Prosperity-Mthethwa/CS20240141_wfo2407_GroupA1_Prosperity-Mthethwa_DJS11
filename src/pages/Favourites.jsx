@@ -76,7 +76,7 @@ const Favorites = () => {
               Your browser does not support the audio element.
             </audio>
             <button
-              className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline mt-2"
+              className="bg-yellow-400 hover:bg-yellow-600 text-black font-bold py-1 px-2 rounded focus:outline-none focus:shadow-outline mt-2"
               onClick={() => handleRemoveFavorite(episode.title)}
             >
               Remove

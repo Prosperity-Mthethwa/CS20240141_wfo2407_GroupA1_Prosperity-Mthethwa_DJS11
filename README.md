@@ -1,5 +1,8 @@
 **AudioPod Documentation**
 
+NETLIFY LINK:
+[https://prosperity-podcastapp.netlify.app/]
+
 Installing AudioPod React Tailwind Project
 
 To install and set up the AudioPod React Tailwind project, follow these step-by-step instructions:
