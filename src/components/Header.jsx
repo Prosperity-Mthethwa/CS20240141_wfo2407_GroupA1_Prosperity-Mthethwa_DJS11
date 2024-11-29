@@ -37,7 +37,7 @@ function Header() {
               A
             </text>
           </svg>
-          <h1 className="text-white text-2xl font-bold ml-2">AudioPod</h1>
+          <h1 className="text-white text-2xl font-bold ml-2">PodCasTAR</h1>
         </div>
 
         {/* Hamburger Button */}
@@ -46,26 +46,25 @@ function Header() {
           onClick={toggleMenu}
         >
           <svg
-    className="h-6 w-6"
-    fill="none"
-    stroke="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
->
-    <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="2"
-        d="M4 6h16M4 12h16M4 18h16" 
-    />
-</svg>
+            className="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
         </button>
 
         {/* Navigation Links (Initially Hidden on Smaller Screens) */}
         <nav
-          className={`${
-            isMenuOpen ? 'flex' : 'hidden'
-          } md:flex flex-col md:flex-row md:items-center absolute md:static top-full md:top-auto left-0 w-full md:w-auto bg-blue-500 md:bg-transparent z-10`}
+          className={`${isMenuOpen ? 'flex' : 'hidden'
+            } md:flex flex-col md:flex-row md:items-center absolute md:static top-full md:top-auto left-0 w-full md:w-auto bg-blue-500 md:bg-transparent z-10`}
         >
           <NavLink
             to="/"
